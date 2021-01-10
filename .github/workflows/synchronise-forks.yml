@@ -5,9 +5,9 @@ on:
 #  schedule:
 #    - cron: 0 8 */5 * *
 
-jobs:
-  拉取lede源码到danshui-git/op:
-    runs-on: ubuntu-latest
+jobs: 
+  build:
+    runs-on: Ubuntu-20.04
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
@@ -19,8 +19,8 @@ jobs:
           force: true
           tags: false
       
-  拉取281677160到danshui-git/op:
-    runs-on: ubuntu-latest
+  build2:
+    runs-on: Ubuntu-20.04
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
