@@ -10,7 +10,7 @@ jobs:
     runs-on: Ubuntu-20.04
     name: 拉取lede仓库到danshui-git/op
     steps:
-      - uses: TobKed/github-forks-sync-action@master
+      - uses: danshui-git/github-forks-sync-action@main
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           upstream_repository: coolsnowwolf/lede
@@ -24,7 +24,7 @@ jobs:
     runs-on: Ubuntu-20.04
     name: 拉取281677160到build-openwrt
     steps:
-      - uses: TobKed/github-forks-sync-action@master
+      - uses: danshui-git/github-forks-sync-action@main
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           upstream_repository: 281677160/build-openwrt
