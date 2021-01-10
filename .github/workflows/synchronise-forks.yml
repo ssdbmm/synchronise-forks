@@ -19,7 +19,6 @@ jobs:
           force: true
           tags: false
       
-      - name: 结束 || exit 0
   update_external_airflo:
     runs-on: ubuntu-latest
     steps:
