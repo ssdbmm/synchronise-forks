@@ -18,3 +18,19 @@ jobs:
           target_branch: master
           force: true
           tags: false
+      
+      - name: 结束 || exit 0
+  update_external_airflo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: TobKed/github-forks-sync-action@master
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          upstream_repository: 281677160/build-openwrt
+          upstream_branch: main
+          target_repository: danshui-git/op
+          target_branch: main
+          force: true
+          tags: false
+        
+                  
