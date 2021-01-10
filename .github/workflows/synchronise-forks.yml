@@ -12,9 +12,9 @@ jobs:
       - uses: TobKed/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
-          upstream_repository: apache/airflow
+          upstream_repository: coolsnowwolf/lede
           upstream_branch: master
           target_repository: danshui-git/op
           target_branch: main
           force: true
-          tags: true
+          tags: false
