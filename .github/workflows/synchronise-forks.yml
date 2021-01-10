@@ -22,15 +22,15 @@ jobs:
       
   build2:
     runs-on: Ubuntu-20.04
-    name: 拉取281677160到danshui-git/op
+    name: 拉取281677160到build-openwrt
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
           upstream_repository: 281677160/build-openwrt
           upstream_branch: main
-          target_repository: danshui-git/op
-          target_branch: master
+          target_repository: build-openwrt
+          target_branch: main
           force: true
           tags: false
         
