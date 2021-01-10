@@ -6,7 +6,7 @@ on:
 #    - cron: 0 8 */5 * *
 
 jobs:
-  update_external_airflow_fork:
+  拉取lede源码到danshui-git/op:
     runs-on: ubuntu-latest
     steps:
       - uses: TobKed/github-forks-sync-action@master
@@ -19,7 +19,7 @@ jobs:
           force: true
           tags: false
       
-  update_external_airflo:
+  拉取281677160到danshui-git/op:
     runs-on: ubuntu-latest
     steps:
       - uses: TobKed/github-forks-sync-action@master
