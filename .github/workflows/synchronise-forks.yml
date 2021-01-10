@@ -8,6 +8,7 @@ on:
 jobs: 
   build:
     runs-on: Ubuntu-20.04
+    name: 拉取lede仓库到danshui-git/op
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
@@ -21,6 +22,7 @@ jobs:
       
   build2:
     runs-on: Ubuntu-20.04
+    name: 拉取281677160到danshui-git/op
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
