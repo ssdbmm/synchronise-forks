@@ -16,8 +16,8 @@ jobs:
         github_token: ${{ secrets.REPO_TOKEN }}
         upstream_repository: coolsnowwolf/lede
         upstream_branch: master
-        target_repository: danshui-git/op
-        target_branch: main
+        target_repository: danshui-git-op
+        target_branch: test
         force: true
         tags: false
       
