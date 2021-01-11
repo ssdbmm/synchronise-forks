@@ -14,10 +14,10 @@ jobs:
       uses: danshui-git/github-forks-sync-action@main
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
-        upstream_repository: coolsnowwolf/lede
-        upstream_branch: master
+        upstream_repository: 281677160/openwrt-package
+        upstream_branch: false
         target_repository: danshui-git/danshui-git-op
-        target_branch: test
+        target_branch: false
         force: true
         tags: false
       
