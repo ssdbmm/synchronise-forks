@@ -8,30 +8,32 @@ on:
 jobs: 
   build:
     runs-on: Ubuntu-20.04
-    name: 拉取lede仓库到danshui-git/op
+    name: 拉取lede仓库
     steps:
-      - uses: danshui-git/github-forks-sync-action@main
-        with:
-          github_token: ${{ secrets.REPO_TOKEN }}
-          upstream_repository: coolsnowwolf/lede
-          upstream_branch: master
-          target_repository: danshui-git/op
-          target_branch: master
-          force: true
-          tags: false
+    - name: 拉取lede仓库到danshui-git/op
+      uses: danshui-git/github-forks-sync-action@main
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}
+        upstream_repository: coolsnowwolf/lede
+        upstream_branch: master
+        target_repository: danshui-git/op
+        target_branch: master
+        force: true
+        tags: false
       
   build2:
     runs-on: Ubuntu-20.04
-    name: 拉取281677160到build-openwrt
+    name: 拉取281677160仓库
     steps:
-      - uses: danshui-git/github-forks-sync-action@main
-        with:
-          github_token: ${{ secrets.REPO_TOKEN }}
-          upstream_repository: 281677160/build-openwrt
-          upstream_branch: main
-          target_repository: danshui-git/build-openwrt
-          target_branch: main
-          force: true
-          tags: false
+    - name: 拉取281677160仓库到danshui-git/build-openwrt
+      uses: danshui-git/github-forks-sync-action@main
+      with:
+        github_token: ${{ secrets.REPO_TOKEN }}
+        upstream_repository: 281677160/build-openwrt
+        upstream_branch: master
+        target_repository: danshui-git/build-openwrt
+        target_branch: master
+        force: true
+        tags: false
         
                   
