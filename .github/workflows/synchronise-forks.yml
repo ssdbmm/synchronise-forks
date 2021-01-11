@@ -30,9 +30,9 @@ jobs:
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
         upstream_repository: 281677160/build-openwrt
-        upstream_branch: master
+        upstream_branch: main
         target_repository: danshui-git/build-openwrt
-        target_branch: master
+        target_branch: main
         force: true
         tags: false
         
