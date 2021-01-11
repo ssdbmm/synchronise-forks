@@ -1,4 +1,4 @@
-name: 编译OpenWrt固件
+name: 重新Fork仓库
 on:
   workflow_dispatch:
 
