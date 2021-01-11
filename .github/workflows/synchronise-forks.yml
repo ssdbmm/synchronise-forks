@@ -17,7 +17,7 @@ jobs:
         upstream_repository: coolsnowwolf/lede
         upstream_branch: master
         target_repository: danshui-git/op
-        target_branch: master
+        target_branch: main
         force: true
         tags: false
       
